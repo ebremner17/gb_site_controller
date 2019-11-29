@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall for Griffin Brothers Site Controller.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function gb_site_controller_install() {
+  \Drupal::service('theme_installer')->install(['griffin_brothers_theme']);
+  \Drupal::service('theme_handler')->setDefault('griffin_brothers_theme');
+
+  $config = \Drupal::service('config.factory')->getEditable('system.theme');
+  $config->set('admin', 'seven')->save();
+}
