@@ -1,0 +1,7 @@
+{
+  "name": "ebremner17/gb_site_controller",
+  "description": "Site controller for Griffin Brothers.",
+  "type": "drupal-custom-module",
+  "homepage": "https://github.com/ebremner17/gb_site_controller",
+  "keywords": ["Drupal"]
+}

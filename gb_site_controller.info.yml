@@ -1,0 +1,28 @@
+name: 'Griffin Brothers site controller'
+type: module
+core: 8.x
+dependencies:
+  - cacheflush
+  - ckeditor
+  - editor
+  - features
+  - field
+  - filter
+  - image
+  - layout_builder_modal
+  - layout_builder_styles
+  - mailsystem
+  - node
+  - options
+  - path
+  - pathauto
+  - publishcontent
+  - smtp
+  - twig_field_value
+  - user
+  - video_embed_field
+  - video_embed_media
+  - video_embed_wysiwyg
+themes:
+  - griffin_brothers_theme
+core_incompatible: false
