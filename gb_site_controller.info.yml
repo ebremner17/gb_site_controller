@@ -12,6 +12,8 @@ dependencies:
   - features
   - field
   - filter
+  - gb_cbl_copy_text
+  - gb_web_page
   - image
   - inline_entity_form
   - layout_builder_modal
