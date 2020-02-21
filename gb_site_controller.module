@@ -8,3 +8,17 @@
 function gb_site_controller_preprocess_html(&$variables) {
   $variables['attributes']['class'][] = 'griffin-brothers';
 }
+
+/**
+ * Implements hook_page_attachments().
+ */
+function gb_site_controller_page_attachments(array &$page) {
+  $is_admin = \Drupal::service('router.admin_context')->isAdminRoute();
+  $is_node = \Drupal::routeMatch()->getRouteName() == 'entity.node.canonical';
+
+  if ($is_admin || $is_node) {
+    dpm('HERE');
+    $page['#attached']['library'][] = 'gb_site_controller/extra_admin';
+    return;
+  }
+}
