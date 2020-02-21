@@ -1,0 +1,82 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.gb_tf_standard
+  module:
+    - ckeditor
+format: gb_tf_standard
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Text
+          items:
+            - Bold
+            - Italic
+            - Underline
+            - Strike
+            - Superscript
+            - Subscript
+            - RemoveFormat
+        -
+          name: Formatting
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+            - Outdent
+            - Indent
+        -
+          name: Styling
+          items:
+            - Styles
+            - Format
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+        -
+          name: Tools
+          items:
+            - Source
+            - Cut
+            - Table
+            - ShowBlocks
+            - Maximize
+            - Undo
+            - Redo
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+    video_embed:
+      defaults:
+        children:
+          autoplay: true
+          responsive: true
+          width: '854'
+          height: '480'
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null
