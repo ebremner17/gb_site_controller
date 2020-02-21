@@ -14,10 +14,9 @@ function gb_site_controller_preprocess_html(&$variables) {
  */
 function gb_site_controller_page_attachments(array &$page) {
   $is_admin = \Drupal::service('router.admin_context')->isAdminRoute();
-  $is_node = \Drupal::routeMatch()->getRouteName() == 'entity.node.canonical';
+  $is_node = \Drupal::routeMatch()->getRouteName();
 
-  if ($is_admin || $is_node) {
-    dpm('HERE');
+  if ($is_admin || $is_node == 'layout_builder.overrides.node.view' || $is_node == 'entity.node.canonical') {
     $page['#attached']['library'][] = 'gb_site_controller/extra_admin';
     return;
   }

@@ -1,5 +1,12 @@
-.block-local-tasks-block {
+.block-local-tasks-block,
+#edit-actions,
+#edit-layout-builder-message,
+.form-type-vertical-tabs {
   max-width: 63rem;
   margin-right: auto;
   margin-left: auto;
+}
+
+.region-highlighted .messages__wrapper {
+  max-width: 63rem!important;
 }
