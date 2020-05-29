@@ -26,11 +26,13 @@ dependencies:
   - path
   - pathauto
   - publishcontent
+  - simple_instagram_feed
   - smtp
   - twig_field_value
   - user
   - video_embed_field
   - video_embed_media
+  - video_embed_spotify
   - video_embed_wysiwyg
 themes:
   - griffin_brothers_theme
