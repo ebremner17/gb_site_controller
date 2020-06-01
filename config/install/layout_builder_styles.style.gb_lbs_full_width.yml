@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: gb_lbs_full_width
+label: 'Full width'
+classes: 'Full width'
+type: component
+block_restrictions: {  }
