@@ -13,6 +13,7 @@ dependencies:
   - field
   - filter
   - gb_cbl_copy_text
+  - gb_cbl_contact_form
   - gb_media
   - gb_web_page
   - image
@@ -34,6 +35,7 @@ dependencies:
   - video_embed_media
   - video_embed_spotify
   - video_embed_wysiwyg
+  - we_megamenu
 themes:
   - griffin_brothers_theme
 core_incompatible: false
